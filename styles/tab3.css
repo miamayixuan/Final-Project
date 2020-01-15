@@ -1,0 +1,48 @@
+html {
+  font-size: 18px; 
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ffffff; 
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+h1{
+  color: white;
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  font-size: 50px;
+  background-color: #DCC7AA;
+  text-align: center;
+  width: 1425px ;
+}
+
+.axis .domain {
+  display: none;
+}
+
+blockquote {
+  page-break-inside: avoid;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 50 20px;
+  font-size: 24px;
+  border-left: 5px solid #eee;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+
