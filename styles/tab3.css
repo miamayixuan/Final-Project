@@ -45,4 +45,28 @@ blockquote {
   line-height: 1.4;
 }
 
+div.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #6B7A8F;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+div.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+
+div.sidebar a:hover {
+  color: white;
+}
 
