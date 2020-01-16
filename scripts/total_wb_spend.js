@@ -4,7 +4,6 @@ var margin = {top: 50, right: 100, bottom: 30, left: 100},
     height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-// append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
