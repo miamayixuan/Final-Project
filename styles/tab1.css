@@ -1,20 +1,20 @@
 /* Header  */
 .jumbotron  {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	margin-bottom: 20px;
-	margin-top: 25px;
-	background-color: #3AAFA9;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  background-color: #3AAFA9;
 }
 
 .jumbotron h1 {
-	color:#FEFFFF;
-	font-size:46px;
+  color:#FEFFFF;
+  font-size:46px;
 }
 
 .jumbotron p {
-	color:#FEFFFF;
-	font-size:30px;
+  color:#FEFFFF;
+  font-size:30px;
 }
 
 /* NAVIGATION BAR  */
