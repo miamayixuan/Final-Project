@@ -7,14 +7,35 @@
   background-size: 120 130;
 }*/
 
-html {
+/*html {
   font-size: 18px; 
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color: #ffffff; 
   color: black;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+}*/
+
+/*.jumbotron  {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: blue ;
+  background-color: #8A2BE2;
+}*/
+
+/*.jumbotron
+{
+background-color:#222;
+}*/
+
+/*h1.jumbotron  {
+  color: white;;
 }
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
 }
 
 body {
@@ -23,7 +44,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background-color: #f4f4f4;
   padding: 0px 0px 0px 0px;
-}
+}*/
 
 /*h1 {
   color: white;
@@ -36,7 +57,7 @@ body {
   padding: 50px 50px 50px 0px; 
 }*/
 
-.main_title h1{
+/*.main_title h1{
   color: white;
   margin-top:20px;
   margin-bottom: 10px;
@@ -48,7 +69,7 @@ body {
   background-color: #DCC7AA;
   text-align: center;
 
-}
+}*/
 
 /*.main_title h1,
 .main_title .h1 {
@@ -63,7 +84,7 @@ body {
   border-top-color: #d5d5d5;
 }*/
 
-h2 {
+/*h2 {
   color: #ffffff;
   font-size: 20px;
   text-align: center; 
@@ -80,11 +101,11 @@ h3 {
   margin: 10px 0px 0px 0px; 
   padding: 0px 0px 0px 0px;
 
-}
+}*/
 
 /* NAVIGATION BAR  */
 
-div.sidebar {
+/*div.sidebar {
   height: 100%;
   width: 160px;
   position: fixed;
@@ -107,4 +128,4 @@ div.sidebar a {
 
 div.sidebar a:hover {
   color: white;
-}
+}*/

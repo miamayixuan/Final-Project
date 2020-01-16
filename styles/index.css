@@ -1,0 +1,18 @@
+.jumbotron  {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 45px;
+	color: #E9E7DA;
+	background-color: #056571;
+}
+
+.jumbotron h1 {
+	color:#E9E7DA;
+	font-size:46px;
+}
+
+.jumbotron p {
+	color:#E9E7DA;
+	font-size:30px;
+}
+
