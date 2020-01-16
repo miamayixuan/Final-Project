@@ -17,34 +17,6 @@
   font-size:30px;
 }
 
-/*for the bar chart*/
-.axis .domain {
-  display: none;
-}
-
-/*for the text*/
-blockquote {
-  page-break-inside: avoid;
-}
-
-blockquote {
-  padding: 10px 20px;
-  margin: 0 50 20px;
-  font-size: 24px;
-  border-left: 5px solid #eee;
-}
-
-.panel-body {
-  padding: 15px;
-}
-
-.lead {
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
 /* NAVIGATION BAR  */
 div.topbar {
   position: fixed;
@@ -69,3 +41,4 @@ div.topbar a {
 div.topbar a:hover {
   color: black;
 }
+
