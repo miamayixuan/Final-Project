@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 50, right: 100, bottom: 30, left: 100},
+var margin = {top: 50, right: 100, bottom: 50, left: 100},
     width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -66,6 +66,7 @@ d3.csv("../datasets/total_wb_spend.csv",
       .attr("transform", "rotate(0)")  
       .style("font-size", "10px")   
       .text("Cumulative spend (billions of $)");
+
 
 
     
