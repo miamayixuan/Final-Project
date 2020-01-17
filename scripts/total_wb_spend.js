@@ -1,6 +1,6 @@
 // set the dimensions and margins of the graph
 var margin = {top: 50, right: 100, bottom: 50, left: 100},
-    width = 700 - margin.left - margin.right,
+    width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -12,12 +12,12 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-//Read the data
-d3.csv("../datasets/total_wb_spend.csv",
+//Read the data. This data set was created using excel, summing together annual data from the output_years_sorted.csv file
+d3.csv("../datasets/output_years_sorted_cumulative.csv",
 
   // When reading the csv, I must format variables:
   function(d){
-    return { date : d3.timeParse("%d/%m/%Y")(d.date), value : d.value }
+    return { date : d3.timeParse("%Y")(d.date), value : d.value }
   },
 
   // Now I can use this dataset:
@@ -56,6 +56,7 @@ d3.csv("../datasets/total_wb_spend.csv",
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(0)")  
       .style("font-size", "10px")   
+      .style('fill', '#69b3a2') 
       .text("Annual spend (millions of $)");
 
 // text label for right y-axis
@@ -64,7 +65,8 @@ d3.csv("../datasets/total_wb_spend.csv",
       .attr("y", (0 - margin.top/4))
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(0)")  
-      .style("font-size", "10px")   
+      .style("font-size", "10px")  
+      .style('fill', 'red') 
       .text("Cumulative spend (billions of $)");
 
 

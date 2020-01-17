@@ -8,11 +8,11 @@ var svg = d3.select("#my_dataviz")
   ;
 
 //Read the data
-d3.csv("../datasets/annual_wb_spend.csv",
+d3.csv("../datasets/output_years_sorted.csv",
 
   // When reading the csv, I must format variables:
   function(d){
-    return { date : d3.timeParse("%d/%m/%Y")(d.date), value : d.value }
+    return { date : d3.timeParse("%Y")(d.date), value : d.value }
   },
 
   // Now I can use this dataset:
