@@ -56,6 +56,7 @@ d3.csv("../datasets/output_years_sorted_cumulative.csv",
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(0)")  
       .style("font-size", "10px")   
+      .style('fill', '#69b3a2') 
       .text("Annual spend (millions of $)");
 
 // text label for right y-axis
@@ -64,7 +65,8 @@ d3.csv("../datasets/output_years_sorted_cumulative.csv",
       .attr("y", (0 - margin.top/4))
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(0)")  
-      .style("font-size", "10px")   
+      .style("font-size", "10px")  
+      .style('fill', 'red') 
       .text("Cumulative spend (billions of $)");
 
 
