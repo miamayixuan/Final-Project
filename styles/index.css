@@ -34,7 +34,7 @@ div.topbar {
   position: fixed;
   top: 0%; 
   left: 0; 
-  width: 100em; 
+  width: 100%; 
   font-family: "Helvetica", Helvetica, sans-serif;
   background-color: #2B7A78;
   overflow-x: hidden;
