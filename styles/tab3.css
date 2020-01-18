@@ -1,7 +1,7 @@
 /* Header  */
 .jumbotron  {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   margin-top: 25px;
   background-color: #3AAFA9;
@@ -20,6 +20,10 @@
 /*for the bar chart*/
 .axis .domain {
   display: none;
+}
+
+.container {
+  font-size: 20px;
 }
 
 /*for the text*/

@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 50, right: 100, bottom: 50, left: 100},
+var margin = {top: 50, right: 100, bottom: 40, left: 100},
     width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -56,7 +56,7 @@ d3.csv("../datasets/output_years_sorted_cumulative.csv",
       .attr("text-anchor", "middle")
       .attr("transform", "rotate(0)")  
       .style("font-size", "10px")   
-      .style('fill', '#69b3a2') 
+      .style('fill', '#FEDD8D') 
       .text("Annual spend (millions of $)");
 
 // text label for right y-axis
@@ -68,6 +68,14 @@ d3.csv("../datasets/output_years_sorted_cumulative.csv",
       .style("font-size", "10px")  
       .style('fill', 'red') 
       .text("Cumulative spend (billions of $)");
+
+    svg.append("text")
+    .attr("x", (width/2))             
+    .attr("y", (height + margin.bottom/1.5))
+    .attr("text-anchor", "middle")
+    .attr("transform", "rotate(0)")  
+    .style("font-size", "10px")   
+    .text("Year");
 
 
 

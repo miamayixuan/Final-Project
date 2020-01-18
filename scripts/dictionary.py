@@ -1,11 +1,13 @@
+
+# This file converts the csv input to a list of dictionaries. The code created using this file is then used to create a word cloud in tab2.js
+
 import os
 import csv
 import json 
                
-with open('words.csv', 'r') as csvfile: 
+with open('../datasets/words.csv', 'r') as csvfile: 
 
 	dictReader = csv.DictReader(csvfile)
-
 	
 	rows = list(dictReader)
 	rows = [dict(row) for row in rows]

@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-
-<!-- Create a div where the graph will take place -->
-<div id="us_sites"></div>
-
-<script>
-
-
 // set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 200, left: 90},
-    width = 700 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var margin = {top: 20, right: 30, bottom: 100, left: 130},
+    width = 1200 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#us_sites")
@@ -25,7 +13,7 @@ var svg = d3.select("#us_sites")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("datasets/all_domains_output.csv", function(data) {
+d3.csv("../datasets/all_domains_output.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -55,17 +43,14 @@ d3.csv("datasets/all_domains_output.csv", function(data) {
     .attr("y", function(d) { return y(d.Country); })
     .attr("width", function(d) { return x(d.Value); })
     .attr("height", y.bandwidth() )
-    .attr("fill", "#69b3a2")
+    .attr("fill", "#FEDD8D")
 
   svg.append("text")
     .attr("x", (width-20))             
-    .attr("y", (height + margin.bottom/3))
+    .attr("y", (height + margin.bottom/1.5))
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(0)")  
     .style("font-size", "10px")   
     .text("Number of visits")
 
 })
-
-</script>
-
