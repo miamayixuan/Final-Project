@@ -17,6 +17,14 @@
   font-size:30px;
 }
 
+.container {
+  font-size: 20px;
+}
+
+.col-md-6 {
+  margin-left: 5px;
+}
+
 /* NAVIGATION BAR  */
 div.topbar {
   position: fixed;

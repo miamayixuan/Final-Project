@@ -37,7 +37,7 @@ d3.csv("../datasets/output_years_sorted.csv",
     svg.append("path")
       .datum(data)
       .attr("fill", "#FEDD8D")
-      .attr("stroke", "#69b3a2")
+      .attr("stroke", "#cce5df")
       .attr("stroke-width", 1.5)
       .attr("d", d3.area()
         .x(function(d) { return x(d.date) })
