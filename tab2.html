@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href = "styles/tab2.css">
+    <link rel="stylesheet" type="text/css" href="styles/tab2.css">
 
     <title>What on? </title>
   </head>
@@ -23,27 +23,30 @@
     <!-- header -->
     <div class="jumbotron text-center">
       <h1>What on?</h1>
-      <p>What are types of projects are being funded?</p>
+      <p>World Bank Project</p>
     </div>
 
     <div class="container">
-<!-- 
-    <div class="panel-body"> -->
+
       <blockquote class="blockquote">
         <p class="lead">$80 billion is a lot of money - and that’s just what the World Bank has spent. The overall amount spent worldwide is likely to be much larger. So what’s all that money being spent on? If you look at the word cloud below, you’ll see some words are bigger than others. If they’re big, it means the World Bank has spent lots of its $80 billion on that thing. If they’re smaller, it means less has been spent on it.
-<br>
-      Let’s go and find out how one country, the USA, has developed its digital services, to help see things a bit more clearly.
-      </p>
+        </p>
       </blockquote>
-            <h2>World Bank projects approved for fiscal years 1991 to 2021</h2>
-<!--             <svg width="960" height="960"></svg> -->
-            <div id="cloud"> </div>
-            <p>
-            Commonly used words are larger and slightly faded in color.  Less common words are smaller and darker.
-            <br>
-            <p> Source: <a href="https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/94553/wb_digital_gov_database.xlsx">World Bank</a>.</p>
 
+      <h2>World Bank projects approved for fiscal years 1991 to 2021</h2>
 
+      <div id="cloud"> </div>
+      <p>Commonly used words are larger and slightly faded in color.  Less common words are smaller and darker.</p>
+      <br>
+      <p> Source: <a href="https://development-data-hub-s3-public.s3.amazonaws.com/ddhfiles/94553/wb_digital_gov_database.xlsx">World Bank</a>.</p>
+
+      <iframe title="Total disbursement from 1991 to 2000 (million USD)" aria-label="Bar Chart" src="//datawrapper.dwcdn.net/Nmj45/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="305"></iframe>
+
+      <blockquote class="blockquote">
+        <p class="lead">
+       Let’s go and find out how one country, the USA, has developed its digital services, to help see things a bit more clearly.
+        </p>
+      </blockquote>
 
 
     </div>
@@ -57,6 +60,7 @@
     <script src ="../scripts/tab2.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="../scripts/d3.layout.cloud.js"></script>
+
   </body>
 </html>
 
