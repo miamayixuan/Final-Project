@@ -1,3 +1,6 @@
+
+# This file converts the csv input to a list of dictionaries. The code created using this file is then used to create a word cloud in tab2.js
+
 import os
 import csv
 import json 
