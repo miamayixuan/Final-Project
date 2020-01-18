@@ -4,12 +4,11 @@
    to arrive at the freq_list.
 
 */
-    var freq_list = [{"text": "Agriculture",  "size": 7}, {"text": "Digital Development", "size": 10}, {"text": "Education", "size": 76}, {"text": "Finance, Competitiveness, and Innovation", "size": 13},  {"text": "Governance", "size": 121}, {"text": "Health, Nutrition & Population", "size": 54}, {"text": "Macroeconomics, Trade and Investment", "size": 6}, {"text": "Poverty", "size": 6}, {"text": "Social Protection & Labor", "size": 37}, {"text": "Social, Urban, Rural and Resilience", "size": 13}, {"text": "Transport", "size": 39}, {"text": "Energy & Extractives", "size": 3}, {"text": "Environment & Natural Resources", "size": 3}, {"text": "Social Development", "size": 1}, {"text": "Water", "size": 2}]
 
+    var freq_list = [{"text": "Agriculture",  "size": 7}, {"text": "Digital Development", "size": 10}, {"text": "Education", "size": 76}, {"text": "Finance, Competitiveness, and Innovation", "size": 13},  {"text": "Governance", "size": 121}, {"text": "Health, Nutrition & Population", "size": 54}, {"text": "Macroeconomics, Trade and Investment", "size": 6}, {"text": "Poverty", "size": 6}, {"text": "Social Protection & Labor", "size": 37}, {"text": "Social, Urban, Rural and Resilience", "size": 13}, {"text": "Transport", "size": 39}, {"text": "Energy & Extractives", "size": 3}, {"text": "Environment & Natural Resources", "size": 3}, {"text": "Social Development", "size": 1}, {"text": "Water", "size": 2}]
 
     var color = d3.scale.linear()
             .domain([0,1,2,3,4,5,6,10,15,20,100])
-            //.range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]); 
             .range(["#FEDD8D", '#c71e1d', "#fa8c00", "#ffca76", "#191616"]); 
             //.range([0, 95]);
 
