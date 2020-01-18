@@ -2,10 +2,9 @@ import os
 import csv
 import json 
                
-with open('words.csv', 'r') as csvfile: 
+with open('../datasets/words.csv', 'r') as csvfile: 
 
 	dictReader = csv.DictReader(csvfile)
-
 	
 	rows = list(dictReader)
 	rows = [dict(row) for row in rows]
