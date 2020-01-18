@@ -1,5 +1,76 @@
-/* Pratyusha's code */
-    body {
+/* Header  */
+.jumbotron  {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  background-color: #3AAFA9;
+}
+
+.jumbotron h1 {
+  color:#FEFFFF;
+  font-size:46px;
+}
+
+.jumbotron p {
+  color:#FEFFFF;
+  font-size:30px;
+}
+
+/*for the bar chart*/
+.axis .domain {
+  display: none;
+}
+
+/*for the text*/
+blockquote {
+  page-break-inside: avoid;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 50 20px;
+  font-size: 24px;
+  border-left: 5px solid #eee;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* NAVIGATION BAR  */
+div.topbar {
+  position: fixed;
+  top: 0%; 
+  left: 0; 
+  width: 100em; 
+  font-family: "Helvetica", Helvetica, sans-serif;
+  background-color: #2B7A78;
+  overflow-x: hidden;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+div.topbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #E9E7DA;
+  display: inline-block;
+}
+
+div.topbar a:hover {
+  color: black;
+}
+
+ body {
         font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
     }
     .legend {
