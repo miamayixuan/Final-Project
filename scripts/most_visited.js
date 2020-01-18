@@ -43,7 +43,7 @@ d3.csv("../datasets/all_domains_output.csv", function(data) {
     .attr("y", function(d) { return y(d.Country); })
     .attr("width", function(d) { return x(d.Value); })
     .attr("height", y.bandwidth() )
-    .attr("fill", "#69b3a2")
+    .attr("fill", "#cce5df")
 
   svg.append("text")
     .attr("x", (width-20))             
