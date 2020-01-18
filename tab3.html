@@ -1,48 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
+    <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href = "styles/tab3.css">
-
-    <title> e-government development index</title>
+    <title>A country example
+    </title>
+    <link href="styles/homepage.css" rel="stylesheet">
   </head>
-
+   <ul>
+  <div class="topbar">
+  <a href="index.html">Home page</a>
+  <a href="tab1.html">How much?</a>
+  <a href="tab2.html">What on?</a>
+  <a href="tab3.html">A country example</a>
+  <a href="tab4.html">E-government rankings</a>
+  <a href="tab5.html">Find out more</a>
+  <a href="https://github.com/miamayixuan/Final-Project">Source Code</a>
+  </div>
+  </head>
+  
+  <h1>Digital Government</h1>
+	<h2> The USA example </h2>
   <body>
-    <div class="topbar">
-      <a href="index.html">Home page</a> 
-      <a href="tab1.html">How much?</a> 
-      <a href="tab2.html">What on?</a> 
-      <a href="tab3.html">e-government index</a> 
-      <a href="tab4.html">How users are using it?</a>
-    </div>
+    <p> So lots of money has been spent on some important stuff. But what does that mean for normal people like you and me?
+    <br>
+    <br>
+    Well, here are some of the digitalization projects that the US government has got going in the last few years. There’s lots of pesky acronyms, but we can handle those in a moment. The graph shows you how many people use a website each day. Look at the top one: almost 150,000 uses each day!
+    <br>
+    <br>
+    So what does that website, the ncbi do? It’s a really important website for doctors who are helping patients who are sick with cancer and other illnesses. When the doctor has a question, they can type their question into this website and get lots of specialised answers. Kind of like Google, but specially for doctors!
+    <br>
+    <br>
+    Why do you think this digital tool might be useful for doctors? Well, imagine if every time they had a question they had to go to the library and look it up in a book. It would take ages! With this digital tool, they can get their answer much more quickly, which helps them give better care to their patients. Pretty important!
+    <br>
+    <br>
+    GRAPH
+    <br>
+    <br>
+  So this stuff matters. But, how is your country doing on going digital? <a href = "tab4.html"> Let’s go and have a look.</a></p>
 
-    <!-- Website Content -->
+  <!-- Adding code for bar chart -->
+  <!DOCTYPE html>
+<html>
 
-    <!-- header -->
-    <div class="jumbotron text-center">
-      <h1>E-government Development Index</h1>
-      <p>How is your country ranked on digital government development?</p>
-    </div>
+<head>
+    <meta charset='utf-8' />
+    <title>Most visited US Government Websites</title>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        
+        .bar {
+            fill: #0E2568;
+        }
+        
+        .axis {
+            font-size: 16px;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            display: none;
+        }
+        
+        .label {
+            font-size: 14px;
+        }
+    </style>
 
-    <div class="container">
-<!-- 
-    <div class="panel-body"> -->
-      <blockquote class="blockquote">
-        <p class="lead">Since 2001, the United Nations has published an United Nations E-Government Survey every two years. The survey provides an analysis of progress in e-government development.</p></blockquote>
+</head>
 
-        <svg width="960" height="960"></svg>
-      </div>
+<body>
 
-    <!-- Bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div id="graphic"></div>
 
-    <!-- Page scripts -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src ="../scripts/tab3.js"></script>
-  </body>
+    <script>
+        var data = [{
+                "name": "ncbi.nlm.nih.gov",
+                "value": 148.64,
+        },
+            {
+                "name": "tools.usps.com",
+                "value": 145.31,
+        },
+            {
+                "name": "forecast.weather.gov",
+                "value": 49.74,
+        },
+            {
+                "name": "medlineplus.gov",
+                "value": 47.32,
+        },
+            {
+                "name": "reg.usps.com",
+                "value": 28.63,
+        },
+            {
+                "name": "cdc.gov",
+                "value": 27.73,
+        },
+            {
+                "name": "usps.com",
+                "value": 27.46,
+        },
+            {
+                "name": "irs.gov",
+                "value": 27.04,
+        },
+            {
+                "name": "weather.gov",
+                "value": 22.55,
+        },
+            {
+                "name": "informeddelivery.usps.com",
+                "value": 17.72,
+        }];
+
+        //sort bars based on value
+        data = data.sort(function (a, b) {
+            return d3.ascending(a.value, b.value);
+        })
+
+        //set up svg using margin conventions - we'll need plenty of room on the left for labels
+        var margin = {
+            top: 15,
+            right: 100,
+            bottom: 15,
+            left: 200
+        };
+
+        var width = 660 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        var svg = d3.select("#graphic").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scale.linear()
+            .range([0, width])
+            .domain([0, d3.max(data, function (d) {
+                return d.value;
+            })]);
+
+        var y = d3.scale.ordinal()
+            .rangeRoundBands([height, 0], .1)
+            .domain(data.map(function (d) {
+                return d.name;
+            }));
+
+        //make y axis to show bar names
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            //no tick marks
+            .tickSize(0)
+            .orient("left");
+
+        var gy = svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+
+        var bars = svg.selectAll(".bar")
+            .data(data)
+            .enter()
+            .append("g")
+
+        //append rects
+        bars.append("rect")
+            .attr("class", "bar")
+            .attr("y", function (d) {
+                return y(d.name);
+            })
+            .attr("height", y.rangeBand())
+            .attr("x", 0)
+            .attr("width", function (d) {
+                return x(d.value);
+            });
+
+        //add a value label to the right of each bar
+        bars.append("text")
+            .attr("class", "label")
+            //y position of the label is halfway down the bar
+            .attr("y", function (d) {
+                return y(d.name) + y.rangeBand() / 2 + 4;
+            })
+            //x position is 3 pixels to the right of the bar
+            .attr("x", function (d) {
+                return x(d.value) + 3;
+            })
+            .text(function (d) {
+                return d.value;
+            });
+        
+    </script>
+
+</body>
+
 </html>
 
+
+<!-- End of code for bar chart -->
+
+</p>
+	<br>
+	<br>
+	</body>

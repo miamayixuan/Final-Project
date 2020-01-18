@@ -17,12 +17,24 @@
   font-size:30px;
 }
 
+.row .col-md-6 {
+    background-color:#DEF2F1;
+    color:#17252A;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.row .col-md-6  h5{
+  font-size:18px;
+}
+
+
 /* NAVIGATION BAR  */
 div.topbar {
   position: fixed;
   top: 0%; 
   left: 0; 
-  width: 100em; 
+  width: 100%; 
   font-family: "Helvetica", Helvetica, sans-serif;
   background-color: #2B7A78;
   overflow-x: hidden;

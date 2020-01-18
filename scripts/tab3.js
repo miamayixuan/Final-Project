@@ -1,5 +1,5 @@
 var svg = d3.select("svg"),
-    margin = {top: 20, right: 20, bottom: 30, left: 250},
+    margin = {top: 1000, right: 20, bottom: 30, left: 250},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") + 1200
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -15,7 +15,7 @@ var x = d3.scaleLinear()    // y = d3.scaleLinear()
 var z = d3.scaleOrdinal()
     .range(["#D13C4B", "#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
 
-d3.csv("../datasets/index.csv", function(d, i, columns) {
+d3.csv("../datasets/50_4index.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;
