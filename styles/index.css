@@ -1,7 +1,7 @@
 /* Header  */
 .jumbotron  {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   margin-top: 25px;
   background-color: #3AAFA9;
@@ -22,6 +22,10 @@
     color:#17252A;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.container {
+  font-size: 20px;
 }
 
 .row .col-md-6  h5{
