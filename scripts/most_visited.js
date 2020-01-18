@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-
-<!-- Create a div where the graph will take place -->
-<div id="us_sites"></div>
-
-<script>
-
-
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 30, bottom: 200, left: 90},
     width = 700 - margin.left - margin.right,
@@ -25,7 +13,7 @@ var svg = d3.select("#us_sites")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("datasets/all_domains_output.csv", function(data) {
+d3.csv("../datasets/all_domains_output.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -66,6 +54,3 @@ d3.csv("datasets/all_domains_output.csv", function(data) {
     .text("Number of visits")
 
 })
-
-</script>
-
