@@ -1,7 +1,7 @@
 var svg = d3.select("svg"),
-    margin = {top: 1000, right: 20, bottom: 30, left: 250},
+    margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") + 1200
+    height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var y = d3.scaleBand()      // x = d3.scaleBand() 
@@ -13,7 +13,7 @@ var x = d3.scaleLinear()    // y = d3.scaleLinear()
     .rangeRound([0, width]);  // .rangeRound([height, 0]);
 
 var z = d3.scaleOrdinal()
-    .range(["#D13C4B", "#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
 d3.csv("../datasets/50_4index.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
@@ -60,7 +60,6 @@ d3.csv("../datasets/50_4index.csv", function(d, i, columns) {
       .attr("text-anchor", "start")
       .text("Population")
     .attr("transform", "translate("+ (-width) +",-10)");    // Newline
-
 
   var legend = g.append("g")
       .attr("font-family", "sans-serif")
