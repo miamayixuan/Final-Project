@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 200, left: 130},
+var margin = {top: 20, right: 30, bottom: 100, left: 130},
     width = 1200 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
@@ -47,7 +47,7 @@ d3.csv("../datasets/all_domains_output.csv", function(data) {
 
   svg.append("text")
     .attr("x", (width-20))             
-    .attr("y", (height + margin.bottom/3))
+    .attr("y", (height + margin.bottom/1.5))
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(0)")  
     .style("font-size", "10px")   
