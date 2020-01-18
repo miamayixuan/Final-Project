@@ -28,7 +28,7 @@
       <p>How is your country ranked on digital government development?</p>
     </div>
 
-  <!--   <div class="container">
+    <div class="container">
       <div class="panel-body"> 
         <blockquote class="blockquote">
           <p class="lead">
@@ -46,10 +46,37 @@
         </blockquote>
 
       </div>
-      
+          <p class = "font-weight-bold">
+            Click button to see rank by individual index:
+          </p>
+
+
+      <div class="btn-group">
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar1')" >E-Government Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar2')" >Online Service Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar3')" >Telecommunications Infrastructure Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar4')" >Human Capital Index</button>
+        </div>
+      </div>
+
+
+
+      <svg class="barchart" id="bar1" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar2" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar3" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar4" width="1000" height="1000"></svg>
+
+      <div id="map"></div>
+
     </div>
- -->
-    <svg width="960" height="960"></svg>
+
 
     <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -59,6 +86,7 @@
     <!-- Page scripts -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="scripts/tab4.js"></script>
+    <script src="scripts/tab4-1.js"></script>
   </body>
 </html>
 

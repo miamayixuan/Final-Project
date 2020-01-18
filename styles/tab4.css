@@ -45,6 +45,16 @@ blockquote {
   line-height: 1.4;
 }
 
+.btn-group {
+  margin-top: 1px;
+  margin-left:18px;
+}
+
+.font-weight-bold {
+  margin-left: 35px;
+
+}
+
 /* NAVIGATION BAR  */
 div.topbar {
   position: fixed;
@@ -69,3 +79,28 @@ div.topbar a {
 div.topbar a:hover {
   color: black;
 }
+
+/*possible tooltip*/
+.bar {
+  fill: steelblue;
+}
+
+.axis path {
+  display: none;
+}
+
+div.d3-tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
