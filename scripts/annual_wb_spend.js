@@ -36,7 +36,7 @@ d3.csv("../datasets/output_years_sorted.csv",
     // Add the area
     svg.append("path")
       .datum(data)
-      .attr("fill", "#cce5df")
+      .attr("fill", "#FEDD8D")
       .attr("stroke", "#69b3a2")
       .attr("stroke-width", 1.5)
       .attr("d", d3.area()
