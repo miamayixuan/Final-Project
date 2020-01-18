@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href = "styles/tab4.css">
 
     <title> E-government rankings</title>
@@ -12,12 +12,12 @@
   <body>
     <div class="topbar">
       <a href="index.html">Home page</a>
-  <a href="tab1.html">How much?</a>
-  <a href="tab2.html">What on?</a>
-  <a href="tab3.html">A country example</a>
-  <a href="tab4.html">E-government rankings</a>
-  <a href="tab5.html">Find out more</a>
-  <a href="https://github.com/miamayixuan/Final-Project">Source Code</a>
+      <a href="tab1.html">How much?</a>
+      <a href="tab2.html">What on?</a>
+      <a href="tab3.html">A country example</a>
+      <a href="tab4.html">E-government rankings</a>
+      <a href="tab5.html">Find out more</a>
+      <a href="https://github.com/miamayixuan/Final-Project">Source Code</a>
     </div>
 
     <!-- Website Content -->
@@ -29,22 +29,55 @@
     </div>
 
     <div class="container">
-      <h2> How is your country ranked?</h2>
-      <br>
-      <p> The United Nations (a big international organisation that helps governments talk and work together)  publishes a ranking on how well governments are doing in their digital government work. Have a look at the chart below and see if you can find yours. Click the button to see different parts of the world!
-      <br>
-      <br>
-      GRAPH
-      <br>
-      <br>
-      Did you find yours? If you did, was it higher or lower than you expected? If you didn’t find it, don’t worry. It just means things are just getting started on digital government there, so your job is even more important: you need to go and talk to your government about getting better digital services!
-      <br>
-      <br>
-      Let’s go and see how we can find out more, <a href = "tab5.html">so we can keep looking into this!</a>
-      </p>
 
-        <svg width="960" height="960"></svg>
+      <div class="panel-body"> 
+        <blockquote class="blockquote">
+          <p class="lead">
+          The United Nations (a big international organisation that helps governments talk and work together)  publishes a ranking on how well governments are doing in their digital government work. Have a look at the chart below and see if you can find yours. Click the button to see different parts of the world!
+          <br>
+          <br>
+          GRAPH
+          <br>
+          <br>
+          Did you find yours? If you did, was it higher or lower than you expected? If you didn’t find it, don’t worry. It just means things are just getting started on digital government there, so your job is even more important: you need to go and talk to your government about getting better digital services!
+          <br>
+          <br>
+          Let’s go and see how we can find out more, <a href = "tab5.html"> so we can keep looking into this! </a>
+          </p>
+        </blockquote>
+
       </div>
+          <p class = "font-weight-bold">
+            Click button to see rank by individual index:
+          </p>
+
+
+      <div class="btn-group">
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar1')" >E-Government Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar2')" >Online Service Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar3')" >Telecommunications Infrastructure Index</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar4')" >Human Capital Index</button>
+        </div>
+      </div>
+
+
+
+      <svg class="barchart" id="bar1" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar2" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar3" width="1000" height="1000"></svg>
+      <svg class="barchart" id="bar4" width="1000" height="1000"></svg>
+
+      <div id="map"></div>
+
+    </div>
+
 
     <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -53,7 +86,8 @@
 
     <!-- Page scripts -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src ="../scripts/tab3.js"></script>
+    <script src="scripts/tab4.js"></script>
+    <script src="scripts/tab4-1.js"></script>
   </body>
 </html>
 

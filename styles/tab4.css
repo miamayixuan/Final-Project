@@ -49,6 +49,16 @@ blockquote {
   line-height: 1.4;
 }
 
+.btn-group {
+  margin-top: 1px;
+  margin-left:18px;
+}
+
+.font-weight-bold {
+  margin-left: 35px;
+
+}
+
 /* NAVIGATION BAR  */
 div.topbar {
   position: fixed;
