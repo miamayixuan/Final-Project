@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 200, left: 90},
-    width = 700 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var margin = {top: 20, right: 30, bottom: 200, left: 130},
+    width = 1200 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#us_sites")
@@ -43,7 +43,7 @@ d3.csv("../datasets/all_domains_output.csv", function(data) {
     .attr("y", function(d) { return y(d.Country); })
     .attr("width", function(d) { return x(d.Value); })
     .attr("height", y.bandwidth() )
-    .attr("fill", "#cce5df")
+    .attr("fill", "#FEDD8D")
 
   svg.append("text")
     .attr("x", (width-20))             
