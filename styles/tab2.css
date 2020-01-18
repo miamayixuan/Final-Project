@@ -22,6 +22,10 @@
   display: none;
 }
 
+.container {
+  font-size: 20px;
+}
+
 /*for the text*/
 blockquote {
   page-break-inside: avoid;

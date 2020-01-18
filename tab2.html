@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/tab2.css">
-
-    <title>What on? </title>
+    <link rel="stylesheet" type="text/css" href = "styles/tab4.css">
+    <title>What on?</title>
+    <link href="styles/tab3.css" rel="stylesheet">
   </head>
-
   <body>
     <div class="topbar">
       <a href="index.html">Home page</a> 
@@ -23,81 +21,27 @@
 
     <!-- header -->
     <div class="jumbotron text-center">
-      <h1>What on?</h1>
-      <p>World Bank Project</p>
+      <h1>What sort of services are being digitalized?</h1>
+      <p>World Bank Projects</p>
     </div>
-
     <div class="container">
-
-      <blockquote class="blockquote">
-        <p class="lead">$80 billion is a lot of money - and that’s just what the World Bank has spent. The overall amount spent worldwide is likely to be much larger. So what’s all that money being spent on? If you look at the word cloud below, you’ll see some words are bigger than others. If they’re big, it means the World Bank has spent lots of its $80 billion on that thing. If they’re smaller, it means less has been spent on it.
+        <p>$80 billion is a lot of money - and that’s just what the World Bank has spent. The overall amount spent worldwide is likely to be much larger. So what’s all that money being spent on? If you look at the word cloud below, you’ll see some words are bigger than others. If they’re big, it means the World Bank has spent lots of its $80 billion on that thing. If they’re smaller, it means less has been spent on it.
+        <br>
+        <br>
+        <div id="cloud"> </div>
+        <br>
+        <br>
+         Let’s go and find out how one country, the USA, has developed its digital services, to <a href = "tab3.html">help see things a bit more clearly.</a>
         </p>
-      </blockquote>
-=======
-    <title>Spending types</title>
-    <link href="styles/homepage.css" rel="stylesheet">
-    <link href="styles/tab2.css" rel="stylesheet">
-  </head>
-  
-  
-   <div class="topbar">
-  <a href="index.html">Home page</a>
-  <a href="tab1.html">How much?</a>
-  <a href="tab2.html">What on?</a>
-  <a href="tab3.html">A country example</a>
-  <a href="tab4.html">E-government rankings</a>
-  <a href="tab5.html">Find out more</a>
-  <a href="https://github.com/miamayixuan/Final-Project">Source Code</a>
-  </div>
+      </div>
 
-  <h1>Digital Government</h1>
-	<h2>How much is being spent?</h2>
-  <body>
-<br>
 
-<center>
-  <p> Here's a look at digital solutions in investment projects 
-        with large ICT or eGov components. These are projects funded by the 
-        World Bank in 144 countries since 1995. Management information systems 
-        for health, finance and human resources (HMIS, FMIS, HRMIS) are popular 
-        components of many of these project. 
-</p>
-<br>
-<br>
-    <h4>World Bank projects approved for fiscal years 1991 to 2021</h4>
-<div id="cloud"> </div>
-  	<p> $80 billion is a lot of money - and that’s just what the World Bank has spent. The overall amount spent worldwide is likely to be much larger. So what’s all that money being spent on? If you look at the word cloud below, you’ll see some words are bigger than others. If they’re big, it means the World Bank has spent lots of its $80 billion on that thing. If they’re smaller, it means less has been spent on it.
-    <br>
-    <br>
-    GRAPH
-    <br>
-    <br>
-    Let’s go and find out how one country, the USA, has developed its digital services, to <a href = "tab3.html">help see things a bit more clearly.</a>
-    </p>
-
-      <!-- Adding code for word cloud -->
-<!DOCTYPE html>
-<html>
+<!-- Adding code for word cloud -->
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="../scripts/d3.layout.cloud.js"></script>
 <head>
     <title>World Bank projects approved for fiscal years 1991 to 2021</title>
 </head>
-<style>
-    body {
-        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
-    }
-    .legend {
-        border: 1px solid #555555;
-        border-radius: 5px 5px 5px 5px;
-        font-size: 0.8em;
-        margin: 10px;
-        padding: 8px;
-    }
-    .bld {
-        font-weight: bold;
-    }
-</style>
 <body>
 
 </body>
@@ -121,21 +65,12 @@
 
       <iframe title="2011 to 2020" aria-label="Bar Chart" id="datawrapper-chart-Vr3EY" src="//datawrapper.dwcdn.net/Vr3EY/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="457"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 
-
-      <blockquote class="blockquote">
-        <p class="lead">
-       Let’s go and find out how one country, the USA, has developed its digital services, to help see things a bit more clearly.
-        </p>
-      </blockquote>
-
-
     </div>
 
-    <!-- Bootstrap scripts -->
+   <!-- Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
     <!-- Page scripts -->
     <script src ="../scripts/tab2.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
