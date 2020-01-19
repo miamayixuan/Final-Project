@@ -100,10 +100,10 @@ function update(cssselector) {
 }
 
 
-drawBar("../datasets/50_4index.csv", "#bar1", ["#D13C4B", "#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
-drawBar("../datasets/osi.csv", "#bar2", ["#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
-drawBar("../datasets/tii.csv", "#bar3", [ "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
-drawBar("../datasets/hci.csv", "#bar4", ["#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
+drawBar("datasets/50_4index.csv", "#bar1", ["#D13C4B", "#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
+drawBar("datasets/osi.csv", "#bar2", ["#FCAC64", "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
+drawBar("datasets/tii.csv", "#bar3", [ "#FEDD8D", "#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
+drawBar("datasets/hci.csv", "#bar4", ["#FCF8B0", "#E1F4A1", "#4289B5", "#69BDA9", "#A9DCA1"]);
 
 update("#bar1")
 
