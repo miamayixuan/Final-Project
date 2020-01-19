@@ -13,7 +13,7 @@ var svg = d3.select("#us_sites")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-d3.csv("../datasets/all_domains_output.csv", function(data) {
+d3.csv("datasets/all_domains_output.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
