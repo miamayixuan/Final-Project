@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data. This data set was created using excel, summing together annual data from the output_years_sorted.csv file
-d3.csv("../datasets/output_years_sorted_cumulative.csv",
+d3.csv("/datasets/output_years_sorted_cumulative.csv",
 
   // When reading the csv, I must format variables:
   function(d){
