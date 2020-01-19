@@ -8,7 +8,7 @@ var svg = d3.select("#my_dataviz")
   ;
 
 //Read the data
-d3.csv("../datasets/output_years_sorted.csv",
+d3.csv("/datasets/output_years_sorted.csv",
 
   // When reading the csv, I must format variables:
   function(d){
