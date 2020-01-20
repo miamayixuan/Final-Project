@@ -26,29 +26,7 @@
   font-size: 20px;
 }
 
-/*for the text*/
-blockquote {
-  page-break-inside: avoid;
-}
-
-blockquote {
-  padding: 10px 20px;
-  margin: 0 50 20px;
-  font-size: 24px;
-  border-left: 5px solid #eee;
-}
-
-.panel-body {
-  padding: 15px;
-}
-
-.lead {
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
+/*Buttons*/
 .btn-group {
   margin-top: 1px;
   margin-left:18px;

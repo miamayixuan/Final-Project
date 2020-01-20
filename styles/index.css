@@ -17,6 +17,7 @@
   font-size:30px;
 }
 
+/* Footer */
 .row .col-md-6 {
     background-color:#DEF2F1;
     color:#17252A;
@@ -24,12 +25,16 @@
     padding-bottom: 25px;
 }
 
-.container {
-  font-size: 20px;
+.row .col-md-6  h5{
+  font-size: 18px;
 }
 
-.row .col-md-6  h5{
-  font-size:18px;
+.row .col-md-6  p{
+  font-size:15px;
+}
+
+.container {
+  font-size: 20px;
 }
 
 

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href = "styles/tab4.css">
 
@@ -10,6 +12,7 @@
   </head>
 
   <body>
+    <!-- Nav Bar -->
     <div class="topbar">
       <a href="index.html">Home page</a>
       <a href="tab1.html">How much?</a>
@@ -28,10 +31,18 @@
       <p> UN league table </p>
     </div>
 
+    <!-- body text -->
     <div class="container">
       <h2> How is your government doing?</h2>
       <br>
-      <p>The United Nations (a big international organisation that helps governments talk and work together)  publishes a ranking on how well governments are doing in their digital government work. Have a look at the chart below and see if you can find yours. Click the button to see different parts of the world!</p>
+      <p>The United Nations (a big international organisation that helps governments talk and work together)  publishes a ranking on how well governments are doing in their digital government work. Have a look at the chart below and see if you can find yours.</p>
+      <br>
+      <h2> Interested in knowing more about the ranking?</h2>
+      <br>
+      <p>The ranking is calculated based on three indexes that measure how effective your country is in deliverying public services online. The indexes are Online Service Index(OSI), Telecommunications Infrastructure index (TII), and Human Capital Index(HCI). The OSI assesses how people like you can easily find and use the online services offered by your government. The TII checks the number of internet users, mobile and landline subscriptions. And the HCI minaly takes into account the average education level and literacy rate in your country. </p>
+      <br>
+
+      <!-- addting buttons -->
       <p class = "font-weight-bold">
           Click button to see rank by individual index:
           </p>
@@ -49,6 +60,8 @@
           <button type="button" class="btn btn-info" onclick="update('#bar4')" >Human Capital Index</button>
         </div>
       </div>
+
+      <!-- create four charts using four dataset so it works with the button -->
       <svg class="barchart" id="bar1" width="1000" height="1000"></svg>
       <svg class="barchart" id="bar2" width="1000" height="1000"></svg>
       <svg class="barchart" id="bar3" width="1000" height="1000"></svg>
@@ -59,7 +72,7 @@
       Data visualisation from: <a href = "https://bl.ocks.org/Andrew-Reid/0aedd5f3fb8b099e3e10690bd38bd458">Popular Blocks</a>
       </p>
 
-      <div id="map"></div>
+      <br>
 
     <p>Did you find yours? If you did, was it higher or lower than you expected? If you didn’t find it, don’t worry. It just means things are just getting started on digital government there, so your job is even more important: you need to go and talk to your government about getting better digital services!</p>
     <p>Let’s go and see how we can find out more, <a href = "tab5.html"> so we can keep looking into this! </a></p>
@@ -72,10 +85,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- Page scripts -->
+    <!-- Graph/D3 scripts -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="scripts/tab4.js"></script>
-    <script src="scripts/tab4-1.js"></script>
   </body>
 </html>
 
